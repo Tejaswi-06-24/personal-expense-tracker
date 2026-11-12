@@ -37,7 +37,7 @@ def show_expenses():
 # STUDENT 1: Complete these two functions on feature-member1.
 def delete_expense(expense_id):
     rows = read_expenses()
-    remaining = [row for row in rows if row["id"] != expense_id]
+    remaining = [row for row in rows if row["id"] != str(expense_id).strip()]
     if len(remaining) == len(rows):
         print("Expense ID not found.")
     else:
@@ -45,10 +45,22 @@ def delete_expense(expense_id):
         print("Expense deleted.")
 
 
+
 def filter_expenses(category):
-    matches = [row for row in read_expenses()
-               if row["category"].lower() == category.lower()]
+    category = category.strip().lower()
+
+    if not category:
+        print("Please enter a category.")
+        return
+
+    matches = [
+        row for row in read_expenses()
+        if row["category"].strip().lower() == category
+    ]
+
     if not matches:
         print("No matching expenses.")
-    for row in matches:
-        print(f"{row['id']}. {row['category']} - INR {float(row['amount']):.2f}")
+    else:
+        for row in matches:
+            print(f"{row['id']}. {row['category']} - INR {float(row['amount']):.2f}")
+
