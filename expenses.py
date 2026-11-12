@@ -36,7 +36,13 @@ def show_expenses():
 
 # STUDENT 1: Complete these two functions on feature-member1.
 def delete_expense(expense_id):
-    print("Not implemented yet: Student 1 will add deletion.")
+    rows = read_expenses()
+    remaining = [row for row in rows if row["id"] != expense_id]
+    if len(remaining) == len(rows):
+        print("Expense ID not found.")
+    else:
+        save_expenses(remaining)
+        print("Expense deleted.")
 
 
 def filter_expenses(category):
