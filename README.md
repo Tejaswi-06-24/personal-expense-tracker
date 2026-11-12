@@ -1,4 +1,4 @@
-# Simple Personal Expense Tracker
+# Simple Personal Expense Tracker - Student 1
 
 A small beginner-friendly **Python** console application. It saves expenses in a local **CSV** file, with amounts in Indian rupees (INR).
 
