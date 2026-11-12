@@ -54,6 +54,26 @@ Amount (INR): 150
 Expense added.
 ```
 
+## Student 1 Contributions
+
+### Delete Expense
+- Deletes an expense using its ID.
+- Displays a message if the ID is not found.
+
+### Filter Expenses
+- Filters expenses by category.
+- Supports case-insensitive matching.
+- Ignores extra spaces in category names.
+- Displays a message if no expenses match.
+
+### Testing
+Manually tested:
+- Adding and displaying expenses
+- Deleting existing and invalid IDs
+- Filtering by Food and other categories
+- Filtering with uppercase and lowercase input
+
+
 ## Links and screenshots
 - [GitHub](https://github.com/)
 - Repository: **[paste your public GitHub repository URL]**
