@@ -49,4 +49,4 @@ Student 2 instead pushes `feature-member2`.
 ```bash
 git log --oneline --graph --all
 ```
-Take genuine screenshots of commits, branches, PRs, peer reviews, conflict markers, resolution, and the working program. Do not fabricate GitHub activity.
+Take genuine screenshots of commits, branches, PRs, peer reviews, conflict markers, resolution, and the working program.

@@ -56,7 +56,7 @@ Expense added.
 
 ## Links and screenshots
 - [GitHub](https://github.com/)
-- Repository: **[paste your public GitHub repository URL]**
+- Repository: **(https://github.com/Tejaswi-06-24/personal-expense-tracker)**
 - Add screenshots of menu, sample expenses, GitHub commits, branches, pull requests, reviews, and merge conflict to your PDF report.
 
 
