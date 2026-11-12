@@ -46,4 +46,9 @@ def delete_expense(expense_id):
 
 
 def filter_expenses(category):
-    print("Not implemented yet: Student 1 will add filtering.")
+    matches = [row for row in read_expenses()
+               if row["category"].lower() == category.lower()]
+    if not matches:
+        print("No matching expenses.")
+    for row in matches:
+        print(f"{row['id']}. {row['category']} - INR {float(row['amount']):.2f}")
